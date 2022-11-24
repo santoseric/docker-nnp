@@ -18,3 +18,14 @@ services:
       - PGDATA=/var/lib/postgresql/data/pgdata
       - POSTGRES_DB=nodechat
       - POSTGRES_USER=postgres
+  nginx:
+    image: nginx
+    container_name: nginx-nodechat
+    networks:
+      - network-nnp
+    ports:
+      - '80:80'
+    volumes:
+      - ./templates:/etc/nginx/templates
+    environment:
+      - NGINX_PORT=80   
