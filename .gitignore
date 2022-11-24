@@ -1,0 +1,5 @@
+.gitlab-ci.yml
+.dockerignore
+var/*
+templates/
+node_modules/
