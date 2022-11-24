@@ -1,7 +1,7 @@
 FROM node:alpine
 
 # Create app directory
-WORKDIR /usr/share/app
+WORKDIR /usr/share/nodeapp-chat
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

@@ -38,6 +38,6 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - .:/usr/share/app
+      - .:/usr/share/nodeapp-chat
 
 
