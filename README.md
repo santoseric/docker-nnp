@@ -6,3 +6,5 @@ Estrutura de containers com
 - PostgreSQL
 
 
+Command to run container on background and build an image 
+- docker-compose up -d --build
