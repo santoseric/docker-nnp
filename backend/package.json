@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/index.js -d dist",
+    "start": "nodemon -w src --exec \"babel-node src --presets env\""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,8 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.20"
   }
 }
