@@ -4,7 +4,6 @@ networks:
 
 services:
   postgresql:
-    container_name: postgresql
     image: postgres:14.6
     container_name: postgres-nodechat
     networks:
