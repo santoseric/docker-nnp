@@ -28,4 +28,16 @@ services:
     volumes:
       - ./templates:/etc/nginx/templates
     environment:
-      - NGINX_PORT=80   
+      - NGINX_PORT=80
+  app:
+    build: .
+    image: xcirel/dockernode
+    command: npm start   
+    networks:
+      - network-nnp
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/app
+
+
